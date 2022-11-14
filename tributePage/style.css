@@ -1,0 +1,55 @@
+:root {
+    --bgColor: #2B2D42;
+    --dirtyWhite: #EDF2F4;
+    --grey: #8D99AE;
+    --primaryColor: #D90429; 
+    --primaryAccent: #EF233C;
+}
+
+
+
+body {
+    background-color: var(--bgColor);
+}
+
+div.hero .text {
+    /* background-color: var(--grey); */
+    opacity: 0.8; 
+    border-radius: 50px;
+    color: var(--dirtyWhite);
+    padding: 10px;
+    padding-left: 2.1em;
+    padding-top: 1em;
+    margin-top: 7em;
+    margin-left: 1em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+div.hero .img {
+    z-index: 100;    
+}
+
+div.hero {
+    font-size: 30px;
+    margin-top: 3em;
+}
+
+div.intro p {
+    color: var(--dirtyWhite);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 75px;
+    margin: 0;
+}
+
+div.intro p span {
+    color: var(--primaryColor);
+}
+
+span.primaryAccent {
+    color: var(--primaryAccent);
+}
+
+span.primaryAccent:hover {
+    color: var(--primaryColor);
+}
