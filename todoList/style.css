@@ -1,0 +1,25 @@
+.todo-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ToDoList-Heading {
+    margin-left: 48%;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.done {
+    text-decoration-line: line-through;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
+}
