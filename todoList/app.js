@@ -33,6 +33,8 @@ window.addEventListener('load', () => {
 
         DisplayTodos();
     })
+
+    DisplayTodos();
 })
 
 function DisplayTodos() {
@@ -56,26 +58,29 @@ function DisplayTodos() {
         input.checked = todo.done;
 
         todoContent.classList.add('todo-content');
+        todoContent.classList.add('text-wrap');
         actions.classList.add('actions');
         editButton.classList.add("edit");
         deleteButton.classList.add("delete");
 
-        todoContent.innerHTML = `<input type="text" value="${todo.task}" readonly>`;
         editButton.innerText = "Edit";
-        deleteButton.innerText = "Delete";
-
-        actions.appendChild(editButton);
-        actions.appendChild(deleteButton);
-        todoItem.appendChild(input);
-        todoItem.appendChild(todoContent);
-        todoItem.appendChild(actions);
-
+        deleteButton.innerText = "Delete";  
+        
         if (todo.done) {
+            todoContent.innerHTML = `<input type="text" class="text-decoration-line-through" value="${todo.task}" readonly>`;
+            todoItem.appendChild(input);
             completedTodoList.appendChild(todoItem);
         }
         else {
+            todoContent.innerHTML = `<input type="text" value="${todo.task}" readonly>`;
+            todoItem.appendChild(input);
             pendingTodoList.appendChild(todoItem);
         }
+
+        actions.appendChild(editButton);
+        actions.appendChild(deleteButton);
+        todoItem.appendChild(todoContent);
+        todoItem.appendChild(actions);
 
         input.addEventListener('click', e => {
             todo.done = e.target.checked;

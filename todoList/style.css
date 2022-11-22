@@ -1,15 +1,73 @@
+body {
+    background-color: #2C3531;
+    color: white;
+}
+
+.welcome {
+    color: white;
+}
+
+.title {
+    color: white;
+}
+
 .todo-list {
     display: flex;
     justify-content: space-around;
 }
 
 .ToDoList-Heading {
-    margin-left: 48%;
+    margin-top: 2rem;
+    color: #d9b08c;
+    font-size: 2rem;
+}
+
+.pending {
+    color: #ffcb9a;
+}
+
+.completed {
+    color: #ffcb9a;
+}
+
+.list {
+    background-color: #1d989a;
+    border-radius: 20px;
+    padding: 2rem;
+    color: #d1e8e2;
 }
 
 .todo-item {
     display: flex;
     justify-content: space-between;
+    background-color: #d9b08c;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.edit {
+    background-color: #169f7f;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+
+.edit:hover {
+    background-color: #0b3d31;
+}
+
+.delete {
+    background-color: #9b2038;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 0.9rem;
+}
+
+.delete:hover {
+    background-color: #57111f;
 }
 
 .done {
@@ -22,4 +80,41 @@ input:not([type="radio"]):not([type="checkbox"]), button {
     outline: none;
     background: none;
     cursor: initial;
+}
+
+.create-item {
+    background-color: #116466;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: antiquewhite;
+}
+
+#task {
+    color: #d1e8e2;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+#create-todo-button {
+    background-color: #d9b08c;
+    border-radius: 10px;
+    font-weight: 500;
+    width: 5rem;
+    height: 2rem;
+}
+
+#create-todo-button:hover {
+    background-color: #ffcb9a;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.todo-item input {
+    margin-right: 10px;
+}
+
+.welcome {
+    margin: 20px;
 }
