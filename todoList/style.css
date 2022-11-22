@@ -11,9 +11,34 @@ body {
     color: white;
 }
 
+@media screen and (max-width: 1024px)
+{
+    .todo-list {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .list {
+        background-color: #1d989a;
+        border-radius: 20px;
+        padding: 2rem;
+        color: #d1e8e2;
+        margin-bottom: 30px;
+    }
+
+    .pending {
+        color: #ffcb9a;
+        margin-top: 20px;
+    }
+    
+    .completed {
+        color: #ffcb9a;
+    }
+}
+
 .todo-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .ToDoList-Heading {
