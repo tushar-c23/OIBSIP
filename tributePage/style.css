@@ -1,26 +1,58 @@
 :root {
-    --bgColor: #2B2D42;
-    --dirtyWhite: #EDF2F4;
+    --bgColor: #1a1a1d;
+    --dirtyWhite: #edf2f427;
     --grey: #8D99AE;
-    --primaryColor: #D90429; 
-    --primaryAccent: #EF233C;
+    --primaryColor: #da0847; 
+    --primaryAccent: #950740;
+    --primaryText: #ebebf3;
+    --bgSecondary: #4e4e5053;
+    --bs-accordion-color: #4e4e50;
+    --bs-accordion-bg: #4e4e50;
+    /* --#{$prefix}accordion-transition: #{$accordion-transition};
+    --#{$prefix}accordion-border-color: #{$accordion-border-color};
+    --#{$prefix}accordion-border-width: #{$accordion-border-width};
+    --#{$prefix}accordion-border-radius: #{$accordion-border-radius};
+    --#{$prefix}accordion-inner-border-radius: #{$accordion-inner-border-radius};
+    --#{$prefix}accordion-btn-padding-x: #{$accordion-button-padding-x};
+    --#{$prefix}accordion-btn-padding-y: #{$accordion-button-padding-y};
+    --#{$prefix}accordion-btn-color: #{$accordion-button-color};
+    --#{$prefix}accordion-btn-bg: #{$accordion-button-bg};
+    --#{$prefix}accordion-btn-icon: #{escape-svg($accordion-button-icon)};
+    --#{$prefix}accordion-btn-icon-width: #{$accordion-icon-width};
+    --#{$prefix}accordion-btn-icon-transform: #{$accordion-icon-transform};
+    --#{$prefix}accordion-btn-icon-transition: #{$accordion-icon-transition};
+    --#{$prefix}accordion-btn-active-icon: #{escape-svg($accordion-button-active-icon)};
+    --#{$prefix}accordion-btn-focus-border-color: #{$accordion-button-focus-border-color};
+    --#{$prefix}accordion-btn-focus-box-shadow: #{$accordion-button-focus-box-shadow};
+    --#{$prefix}accordion-body-padding-x: #{$accordion-body-padding-x};
+    --#{$prefix}accordion-body-padding-y: #{$accordion-body-padding-y};
+    --#{$prefix}accordion-active-color: #{$accordion-button-active-color};
+    --#{$prefix}accordion-active-bg: #{$accordion-button-active-bg};
+     */
 }
-
-
 
 body {
     background-color: var(--bgColor);
 }
 
+.achievements {
+    margin-top: 2rem;
+}
+
+.achievements h1{
+    margin-top: 2rem;
+    color: var(--primaryAccent);
+}
+
 div.hero .text {
-    /* background-color: var(--grey); */
-    opacity: 0.8; 
+    background-color: var(--bgSecondary);
     border-radius: 50px;
-    color: var(--dirtyWhite);
-    padding: 10px;
-    padding-left: 2.1em;
-    padding-top: 1em;
-    margin-top: 7em;
+    color: var(--primaryText);
+    padding: 2rem;
+    padding-bottom: 0rem;
+    /* padding-left: 2.1em;
+    padding-top: 1em; */
+    margin-top: 5em;
     margin-left: 1em;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -31,7 +63,7 @@ div.hero .img {
 
 div.hero {
     font-size: 30px;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 div.intro p {
@@ -46,10 +78,16 @@ div.intro p span {
     color: var(--primaryColor);
 }
 
-span.primaryAccent {
+a.primaryAccent {
     color: var(--primaryAccent);
+    text-decoration: none;
 }
 
-span.primaryAccent:hover {
+a.primaryAccent:hover {
     color: var(--primaryColor);
+    cursor: pointer;
+}
+
+.accordion {
+    background-color: var(--bs-accordion-bg);
 }
