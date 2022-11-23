@@ -4,7 +4,7 @@
   "description": "Repo to maintain all the task given by Oasis Infobyte",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d OIBSIP"
+    "deploy": "gh-pages -d ."
   },
   "repository": {
     "type": "git",
